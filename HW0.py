@@ -1,0 +1,20 @@
+a=int(input())
+p50=int()
+p10=int()
+p5=int()
+p1=int()
+p=100-a
+if p>=50:
+   p50=1
+   p10=(p-50)//10
+   p5=(p-50-10*p10)//5
+   p1=p-50-10*p10-5*p5
+else:
+   p50=0
+   p10=p//10
+   p5=(p-10*p10)//5
+   p1=p-10*p10-5*p5
+print(p50)
+print(p10)
+print(p5)
+print(p1)
